@@ -10,11 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
 </head>
 <body>
+
+
+    <!-- TODO : POUR TOUTES LES IMAGES "DE CONTENU" (donc non décorative), UTILISER LES BALISES <figure> avec <figcaption>. voir exemple sur la première image des hébergement -->
+
     <!-- HEADER -->
     <header>
         <div id="logoReservia">
+            <!-- TODO : Fermer les balises qui n'ont de contenu par un / à la fin -->
+            <!-- TODO : <img src="images/logo/Reservia@3x.png" alt="logo" /> -->
             <img src="images/logo/Reservia@3x.png" alt="logo" >
         </div>
+        <!-- TODO : La navigatoire doit comprendre une liste <ul> avec les élements <li> -->
+        <!-- TODO : Le lien s'inscrire doit faire parti de cette liste -->
         <nav>
             <a href="#accommodations">Hébergements </a>
             <a href="#activities">Activités </a>
@@ -23,6 +31,7 @@
     </header>
     <!-- SECTIONS -->
     <main>
+        <!-- TODO : Attention à l'indentation pour les commentaire et tous les blocs à l'intérieur des autres -->
     <!-- SEARCH AND FILTER-->
         <section class="searchAndFilter">
             <!-- SEARCH -->
@@ -31,11 +40,17 @@
             <p>En plein centre ville ou en pleine nature</p>
         </div>
         <div class="searchCity">
+            <!-- TODO : Attention à l'indentitation -->
                 <div class="iconSearch">
+                    <!-- TODO : Sur le label, il manque le for="search" -->
                     <label for="search" id="fa-map-marker-alt"><i class="fas fa-map-marker-alt"></i></label>
                 </div>
+            <!-- TODO : Ok pour le minlength, par contre, le maxlength est un peu trop petit écrire un nom de ville -->
+            <!-- TODO : Ne pas utiliser le size, on règlera la largeur du champ via le CSS -->
                 <input type="text" id="search" name="search" minlength="4" maxlength="8" size="10" placeholder="Marseille, France"/>
-                <button id="btnSearch"><span>Rechercher</span> 
+
+            <!-- TODO : Pour la lisibilité, il faut mieux mettre le span à la ligne -->
+                <button id="btnSearch"><span>Rechercher</span>
                     <i class="fas fa-search"></i>
                 </button>
         </div>
@@ -69,7 +84,9 @@
                 </div>
             </div>
             <div class="info">
+                <!-- TODO : Attention indentation -->
                     <i class="fas fa-info"></i>
+                <!-- TODO : attention au d majuscule -->
                     <p>Plus de 500 logements Disponibles dans cette ville</p>
             </div>
         </div>
@@ -82,11 +99,21 @@
                     <a href="#">
                         <div class="accommodationCity" id="cannabiereHebergement">
                             <div class="contentAccommodation">
+
+<!--                                <figure class="imgAcc">-->
+<!--                                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="accommodation">-->
+<!--                                    <figcaption class="infoHebergement">-->
+<!--                                        <h4>Auberge la Cannebière</h4>-->
+<!--                                        <p>Nuit à partir de<span> 25€</span></p>-->
+<!--                                    </figcaption>-->
+<!--                                </figure>-->
+
                                 <div class="imgAcc">
                                     <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="accommodation">
                                 </div>
                                 <div class="infoHebergement">
                                     <h4>Auberge la Cannebière</h4>
+                                    <!-- TODO : Si on veut mettre le texte en gras, il vaut mieux utiliser la balise <strong> -->
                                     <p>Nuit à partir de<span> 25€</span></p>
                                 </div>
                                 <div class="stella">
@@ -107,6 +134,7 @@
                                 </div>
                                 <div class="infoHebergement">
                                     <h4>Hôtel du port</h4>
+                                    <!-- TODO : Si on veut mettre le texte en gras, il vaut mieux utiliser la balise <strong> -->
                                     <p>Nuit à partir de<span> 52€</span></p>
                                 </div>
                                 <div class="stella">
@@ -127,6 +155,7 @@
                                 </div>
                                 <div class="infoHebergement">
                                     <h4>Hôtel Les mouettes</h4>
+                                    <!-- TODO : Si on veut mettre le texte en gras, il vaut mieux utiliser la balise <strong> -->
                                     <p>Nuit à partir de<span> 76€</span></p>
                                 </div>
                                 <div class="stella">
@@ -147,6 +176,7 @@
                                 </div>
                                 <div class="infoHebergement">
                                     <h4>Hôtel de la mer</h4>
+                                    <!-- TODO : Si on veut mettre le texte en gras, il vaut mieux utiliser la balise <strong> -->
                                     <p>Nuit à partir de<span> 46€</span></p>
                                 </div>
                                 <div class="stella">
@@ -167,6 +197,7 @@
                                 </div>
                                 <div class="infoHebergement">
                                     <h4>Auberge Le Panier</h4>
+                                    <!-- TODO : Si on veut mettre le texte en gras, il vaut mieux utiliser la balise <strong> -->
                                     <p>Nuit à partir de<span> 23€</span></p>
                                 </div>
                                 <div class="stella">
@@ -183,10 +214,12 @@
                         <div class="accommodationCity" id="aminaHebergement">
                             <div class="contentAccommodation">
                                 <div class="imgAcc">
+                                    <!-- TODO : Attention indentation -->
                                 <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="accommodation">
                                 </div>
                                 <div class="infoHebergement">
                                     <h4>Hôtel ches Amina</h4>
+                                    <!-- TODO : Si on veut mettre le texte en gras, il vaut mieux utiliser la balise <strong> -->
                                     <p>Nuit à partir de<span> 96€</span></p>
                                 </div>
                                 <div class="stella">
@@ -277,6 +310,7 @@
         </section>
         <!-- ACTIVITY PART -->    
         <section class="activity" id="activities">
+            <!-- TODO : Attention indentation -->
             <h3 class="titleActivity">Activités à Marseille</h3>
                 <a href="#" class="cardActivity" id="vieuxPort">
                     <div class="imgActivity">
@@ -295,19 +329,19 @@
                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image d activite" />
                     </div>
                     <h4>Iles de Frioul</h4>
-                </a> 
+                </a>
                 <a href="#" class="cardActivity" id="parcNational">
                     <div class="imgActivity">
                         <img src="images/activites/4_small//kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image d activite" />
                     </div>
                     <h4>Parc National des calanques</h4>
-                </a>     
+                </a>
                 <a href="#" class="cardActivity" id="notreDame">
                     <div class="imgActivity">
                         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image d activite" />
                     </div>
                     <h4>Notre-Dame-de-la-Garde</h4>
-                </a>      
+                </a>
                 <a href="#" class="cardActivity" id="parcLongchamp">
                     <div class="imgActivity">
                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image d activite" />
@@ -316,6 +350,8 @@
                 </a>
         </section>
     </main>
+    <!-- TODO : Attention indentation sur le commentaire-->
+    <!-- TODO : Sur le footer, ce sont des listes de lien : utiliser <ul> et <li> ; sans oublier que les différents liens, sont juste des liens, et donc des <a> -->
 <!-- FOOTER -->
     <footer>
         <div class="about">
