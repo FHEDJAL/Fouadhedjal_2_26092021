@@ -16,24 +16,20 @@
     <!-- HEADER -->
     <header>
         <div id="logoReservia">
-            <!-- TODO : Fermer les balises qui n'ont de contenu par un / à la fin -->
-            <!-- TODO : <img src="images/logo/Reservia@3x.png" alt="logo" /> -->
             <img src="images/logo/Reservia@3x.png" alt="logo"/>
         </div>
-            <!-- TODO : Le lien s'inscrire doit faire parti de cette liste -->
-            <nav>
-                <ul class="liste">
-                        <li class="nav-hebergement"><a href="#hebergement">Hébergements</a></li>
-                        <li class="nav-activite"><a href="#activites">Activités</a></li>
-                        <li class="nav-sincrire"><a href="#" class="sinscrire"><strong>S'inscrire</strong></a></li>
-                    </div>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul class="liste a">
+                <li class="nav-hebergement"><a href="#hebergement">Hébergements</a></li>
+                <li class="nav-activite"><a href="#activites">Activités</a></li>
+                <li class="nav-sincrire"><a href="#" class="sinscrire"><strong>S'inscrire</strong></a></li>
+            </ul>
+        </nav>
 
     </header>
     <!-- SECTIONS -->
-        <!-- TODO : Attention à l'indentation pour les commentaire et tous les blocs à l'intérieur des autres -->
+    <main>
+        <!-- commentaire et tous les blocs à l'intérieur des autres -->
     <!-- SEARCH AND FILTER-->
         <section class="searchAndFilter">
             <!-- SEARCH -->
@@ -42,19 +38,13 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <div class="searchCity">
-            <!-- TODO : Attention à l'indentitation -->
-            <div class="iconSearch">
-                    <!-- TODO : Sur le label, il manque le for="search" -->
+                <div class="iconSearch">
                     <label for="search" id="fa-map-marker-alt"><i class="fas fa-map-marker-alt"></i></label>
                 </div>
-            <!-- TODO : Ok pour le minlength, par contre, le maxlength est un peu trop petit écrire un nom de ville -->
-            <!-- TODO : Ne pas utiliser le size, on règlera la largeur du champ via le CSS -->
-                    <input type="text" id="search" name="search" minlength="4" maxlength="8" size="10" placeholder="Marseille, France"/>
-
-            <!-- TODO : Pour la lisibilité, il faut mieux mettre le span à la ligne -->
+                <input type="text" id="search" name="search" placeholder="Marseille, France"/>
                 <button id="btnSearch">
-                    <span>Rechercher</span>
-                    <i class="fas fa-search"></i>
+                <span>Rechercher</span>
+                <i class="fas fa-search"></i>
                 </button>
             </div>
         <!-- FILTER -->
@@ -87,9 +77,7 @@
                 </div>
             </div>
             <div class="info">
-                <!-- TODO : Attention indentation -->
-                    <i class="fas fa-info"></i>
-                <!-- TODO : attention au d majuscule -->
+                <i class="fas fa-info"></i>
                     <p>Plus de 500 logements disponibles dans cette ville</p>
             </div>
         </div>
@@ -138,7 +126,7 @@
                                 <div class="infoHebergement">
                                     <h4>Hôtel du port</h4>
                                     <!-- TODO : Si on veut mettre le texte en gras, il vaut mieux utiliser la balise <strong> -->
-                                    <p>Nuit à partir de<span> 52€</span></p>
+                                    <p>Nuit à partir de<strong> 52€</strong></p>
                                 </div>
                                 <div class="stella">
                                     <i class="fas fa-star"></i>
@@ -158,8 +146,8 @@
                                 </div>
                                 <div class="infoHebergement">
                                     <h4>Hôtel Les mouettes</h4>
-                                    <!-- TODO : Si on veut mettre le texte en gras, il vaut mieux utiliser la balise <strong> -->
-                                    <p>Nuit à partir de<span> 76€</span></p>
+            
+                                    <p>Nuit à partir de<strong> 76€</strong></p>
                                 </div>
                                 <div class="stella">
                                     <i class="fas fa-star"></i>
@@ -217,8 +205,7 @@
                         <div class="accommodationCity" id="aminaHebergement">
                             <div class="contentAccommodation">
                                 <div class="imgAcc">
-                                    <!-- TODO : Attention indentation -->
-                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="accommodation">
+                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="accommodation"/>
                                 </div>
                                 <div class="infoHebergement">
                                     <h4>Hôtel ches Amina</h4>
@@ -313,8 +300,7 @@
         </section>
         <!-- ACTIVITY PART -->    
         <section class="activity" id="activities">
-            <!-- TODO : Attention indentation -->
-            <h3 class="titleActivity">Activités à Marseille</h3>
+                        <h3 class="titleActivity">Activités à Marseille</h3>
                 <a href="#" class="cardActivity" id="vieuxPort">
                     <div class="imgActivity">
                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image d activite" />
@@ -353,8 +339,6 @@
                 </a>
         </section>
     </main>
-    <!-- TODO : Attention indentation sur le commentaire-->
-    <!-- TODO : Sur le footer, ce sont des listes de lien : utiliser <ul> et <li> ; sans oublier que les différents liens, sont juste des liens, et donc des <a> -->
 <!-- FOOTER -->
 <footer>
     <div class="bloc-footer">
@@ -363,7 +347,7 @@
             <li><a href="#">Fonctionnement du site</a></li>
             <li><a href="#">Conditions générales de vente</a></li>
             <li><a href="#">Données et confidentialité</a></li>
-        </ul>
+    </ul>
     </div>
     <div class="bloc-footer">
         <h3>Nos hébergements</h3>
