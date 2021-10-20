@@ -1,7 +1,11 @@
 body {
     max-width: 1500px;
-    margin: auto;
     font-family: 'Raleway', Georgia, serif, sans-serif;
+}
+*,*:before, *:after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
 }
 .fas {
     color: #0065FC;
@@ -13,7 +17,7 @@ header {
     height: 80px;
     margin: 20px;
 }
-header a {
+header a:hover {
     display: flex;
     height: 100%;
     align-items: center;
@@ -23,12 +27,12 @@ header a:hover {
     border-top: 04px solid #0065FC;
     color: #0065FC;
 }
-nav {
-    width: 100%;
+.liste {
+    width: auto;
     display: flex;
     justify-content: flex-end;
-    height: 100%;
-    align-items: center; 
+    height: auto;
+    align-items: row; 
 }
 #logoReservia {
     display: flex;
@@ -62,6 +66,7 @@ nav {
         width: 50%;
         justify-content: center;
     }
+
     .liste {
         display: flex;
         flex-direction: row;
@@ -454,7 +459,7 @@ footer {
 }
 
 @media (max-width:640px) {
-    footer {
+    footer {6
         flex-flow: row wrap;
     }
 }
