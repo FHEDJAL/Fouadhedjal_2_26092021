@@ -135,6 +135,14 @@ body {
   display: flex;
   align-items: center;
 }
+.filtre-liste {
+  margin: 0;
+  padding: 0;
+}
+.filtre-liste li {
+  display: inline-block;
+  list-style: none;
+}
 .marg-filtre-titre {
   margin-right: 20px;
 }
@@ -210,6 +218,7 @@ body {
   border-radius: 20px;
   /* rajouter pour voir en version mobile et desktop */
   box-shadow: 5px 5px 5px 1px #f2f2f2;
+  transition: .6s;
 }
 .cube-hebergements:hover {
   cursor: pointer;
@@ -272,6 +281,7 @@ body {
 .cube-populaires:hover {
   cursor: pointer;
   transform: scale(1.05);
+  transition: .6s;
 }
 .cube-details-populaires {
   width: 60%;
@@ -317,6 +327,7 @@ body {
 .cube-activites:hover {
   cursor: pointer;
   transform: scale(1.03);
+  transition: .6s;
 }
 .cube-activites2356 {
   width: 100%;
@@ -499,84 +510,3 @@ body {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 600px) {
-  .size-lien {
-    flex-direction: row;
-  }
-  .size-lien12 {
-    order: 1;
-    width: 100%;
-    margin-left: 0;
-  }
-  .size-lien-mobile {
-    width: 50%;
-    border-top: 0;
-    border-bottom: 5px solid #f2f2f2;
-  }
-  .size-liens {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .size-lien-mobile:hover {
-    border-top: 0;
-    border-bottom: 5px solid #0065fc;
-  }
-  /* .mobileTitreh1 {
-    font-size: x-large;
-  } */
-  .bordure-search {
-    width: auto;
-    border: none;
-  }
-  .recherche {
-    width: 200px;
-    border-bottom: 1px solid #f2f2f2;
-    border-top: 1px solid #f2f2f2;
-  }
-  .button-search {
-    width: 50px;
-    border-radius: 15px;
-  }
-  .desktop-none {
-    display: block;
-  }
-  .mobile-none {
-    display: none;
-  }
-  .marg-filtre {
-    padding-left: 5%;
-  }
-  .mobile-economiques {
-    margin-right: 5px;
-  }
-  .mobile-familiales {
-    margin-right: 0;
-  }
-  .filtre-texte {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .info {
-    padding-left: 5%;
-  }
-  .bloc-populaires {
-    border-radius: 0;
-  }
-  .bloc-hebergements {
-    background-color: white;
-  }
-  .mobile-titre-para {
-    padding-left: 5%;
-  }
-  .bloc-activites {
-    padding: 5%;
-    width: 90%;
-  }
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-}
-6
