@@ -135,6 +135,14 @@ body {
   display: flex;
   align-items: center;
 }
+.filtre-liste {
+  margin: 0;
+  padding: 0;
+}
+.filtre-liste li {
+  display: inline-block;
+  list-style: none;
+}
 .marg-filtre-titre {
   margin-right: 20px;
 }
@@ -210,6 +218,7 @@ body {
   border-radius: 20px;
   /* rajouter pour voir en version mobile et desktop */
   box-shadow: 5px 5px 5px 1px #f2f2f2;
+  transition: .6s;
 }
 .cube-hebergements:hover {
   cursor: pointer;
@@ -272,6 +281,7 @@ body {
 .cube-populaires:hover {
   cursor: pointer;
   transform: scale(1.05);
+  transition: .6s;
 }
 .cube-details-populaires {
   width: 60%;
@@ -317,6 +327,7 @@ body {
 .cube-activites:hover {
   cursor: pointer;
   transform: scale(1.03);
+  transition: .6s;
 }
 .cube-activites2356 {
   width: 100%;
@@ -394,5 +405,3 @@ body {
 .div-lien-foot {
   height: 30px;
 }
-/* responsive */
-
