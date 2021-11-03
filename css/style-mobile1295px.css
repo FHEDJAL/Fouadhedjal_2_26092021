@@ -1,0 +1,19 @@
+@media screen and (max-width: 1295px) {
+  .size-lien12 {
+    margin-left: 35%;
+  }
+  .cube-details-hebergements {
+    min-height: 150px;
+  }
+  .size-hebergements {
+    min-height: auto;
+    padding: 20px;
+  }
+  .size-populaires {
+    min-height: auto;
+    padding: 20px;
+  }
+  .tablette-size-titre-pop {
+    margin-top: 0;
+  }
+}
