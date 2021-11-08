@@ -1,8 +1,4 @@
 
-  .mobile-filtre-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .filtre-texte-icons {
     margin-bottom: 20px;
   }
@@ -23,3 +19,12 @@
     margin-top: 50px;
     padding: 5%;
   }
+}
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
