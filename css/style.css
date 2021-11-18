@@ -111,9 +111,9 @@ body {
   height:100%;
   width: 100%;
   padding-top: 20px;
-  padding-right: 20px;
+  padding-right: 15px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .p-header {
@@ -148,6 +148,7 @@ body {
   color: white;
   cursor: pointer;
   border-radius: 0 10px 10px 0;
+  font-weight: bold;
 }
 .button-search:hover {
   color: #0065fc;
@@ -236,13 +237,13 @@ body {
   flex: 2;
   height: 650px;
   margin-right: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .size-populaires {
   flex: 1;
   height: 650px;
   margin-left: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .bloc-hebergements {
   padding-left: 20px;
@@ -308,10 +309,16 @@ body {
   border-radius: 15px 15px 0 0;
 }
 /* Populaires */
-
+.p-star {
+  display: block;
+  margin-block-start: 3em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 .bloc-populaires {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .bloc-populaires12 {
   margin-bottom: 45px;
@@ -386,6 +393,14 @@ body {
   transform: scale(1.03);
 }
 /* fin reglage bloc */
+h4 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 .hauteur-titre {
   height: 70px;
 }
@@ -470,15 +485,15 @@ body {
     margin-left: 35%;
   }
   .cube-details-hebergements {
-    min-height: 150px;
+    min-height: 10px;
   }
   .size-hebergements {
     min-height: auto;
-    padding: 20px;
+    padding: 30px;
   }
   .size-populaires {
     min-height: auto;
-    padding: 20px;
+    padding: 30px;
   }
   .tablette-size-titre-pop {
     margin-top: 0;
