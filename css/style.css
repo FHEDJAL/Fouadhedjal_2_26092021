@@ -111,9 +111,9 @@ body {
   height:100%;
   width: 100%;
   padding-top: 20px;
-  padding-right: 15px;
+  padding-right: 0px;
   padding-bottom: 20px;
-  padding-left: 15px;
+  padding-left: 0px;
 }
 
 .p-header {
@@ -222,13 +222,17 @@ body {
   line-height: 10px;
 }
 /* HEBERGEMENTS */
+.element-style {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 .mobile-titre-para {
   margin-top: 40px;
   margin-bottom: 20px;
 }
 .hebergements {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .h3 {
   white-space: nowrap;
@@ -236,18 +240,18 @@ body {
 .size-hebergements {
   flex: 2;
   height: 650px;
-  margin-right: 20px;
-  border-radius: 15px;
+  margin-right: 15px;
+  border-radius: 25px;
 }
 .size-populaires {
   flex: 1;
   height: 650px;
-  margin-left: 20px;
-  border-radius: 15px;
+  margin-left: 15px;
+  border-radius: 25px;
 }
 .bloc-hebergements {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .bloc1 {
   margin-bottom: 10px;
@@ -464,7 +468,7 @@ h4 {
   margin-top: 40px;
 }
 .marge-bloc-foot1 {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 .marge-bloc-foot3 {
   margin-right: 15%;
@@ -489,7 +493,7 @@ h4 {
   }
   .size-hebergements {
     min-height: auto;
-    padding: 30px;
+    padding: 25px;
   }
   .size-populaires {
     min-height: auto;
@@ -521,11 +525,20 @@ h4 {
     flex: none;
     width: 90%;
     margin-right: 0;
-    margin-top: 50px;
+    margin-top: 0px;
     padding: 5%;
   }
 }
 @media screen and (max-width: 770px) {
+  .element-style-mob-bloc {
+    margin: 10px;
+}
+  
+  .element-style-mob {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
   .size-liens {
     width: 90%;
   }
@@ -584,7 +597,18 @@ h4 {
   }
 }
 @media screen and (max-width: 600px) {
-  
+  .footer-mob {
+    height: auto px;
+    margin-top: 0px;
+  }
+  .tablette-size-titre-pop600px {
+    margin-top: 30px;
+  }
+  .element-style-mob-bloc-pop {
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+
   .bloc-hebergements-mobile {
     padding-left: 0px;
     padding-right: 0px;
