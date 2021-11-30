@@ -5,6 +5,9 @@ body {
   max-width: 1300px;
   margin: 0 auto;
 }
+.flex {
+  display : flex;
+}
 .flex-centre {
   display: flex;
   justify-content: center;
@@ -113,7 +116,7 @@ body {
   padding-top: 20px;
   padding-right: 0px;
   padding-bottom: 20px;
-  padding-left: 0px;
+  padding-left: 30px;
 }
 
 .p-header {
@@ -233,6 +236,8 @@ body {
 .hebergements {
   margin-left: 0px;
   margin-right: 0px;
+  padding-left: 30px;
+  padding-right: 0px;
 }
 .h3 {
   white-space: nowrap;
@@ -250,7 +255,7 @@ body {
   border-radius: 25px;
 }
 .bloc-hebergements {
-  padding-left: 0px;
+  padding-left: 30px;
   padding-right: 0px;
 }
 .bloc1 {
@@ -466,12 +471,15 @@ h4 {
 .footer {
   height: auto px;
   margin-top: 40px;
+  padding: 0 20px;
+}
+.footer > div {
+  flex:1;
 }
 .marge-bloc-foot1 {
-  margin-left: 0px;
+
 }
 .marge-bloc-foot3 {
-  margin-right: 15%;
 }
 .taille-bloc-foot{
   height:200px;
