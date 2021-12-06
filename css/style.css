@@ -469,7 +469,7 @@ h4 {
   width: auto;
 }
 .footer {
-  height: auto px;
+  height: auto;
   margin-top: 40px;
   padding: 0 20px;
 }
@@ -606,7 +606,7 @@ h4 {
 }
 @media screen and (max-width: 600px) {
   .footer-mob {
-    height: auto px;
+    height: auto;
     margin-top: 0px;
   }
   .tablette-size-titre-pop600px {
@@ -630,7 +630,7 @@ h4 {
     padding-left: 0px;
   }
   .footer-mobile {
-    height: auto px;
+    height: auto;
     margin-top: 100px;
   }
   .liensheight {
